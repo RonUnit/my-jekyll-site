@@ -22,7 +22,7 @@ title: Learn Violin
 email: geelongviolinacademy@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Get professional violin lessons tailored to your specific level with online sessions at the tip of your fingers.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/my-jekyll-site" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
