@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    main {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Geelong Violin Academy</h1>
+    <nav>
+  <ul>
+    {% for item in site.navigation %}
+      <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>&copy; {{ site.time | date: "%Y" }} Geelong Violin Academy</p>
+  </footer>
+</body>
+</html>

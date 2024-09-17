@@ -16,3 +16,12 @@ You can find the source code for Jekyll at GitHub:
 
 
 [jekyll-organization]: https://github.com/jekyll
+
+---
+layout: default
+title: "About Geelong Violin Academy"
+---
+
+## About Us
+
+Geelong Violin Academy offers expert violin instruction for students of all ages and levels...
