@@ -5,4 +5,6 @@
 layout: home
 ---
 
+# Welcome to my website!
+
 This site showcases my work and projects. Stay tuned for more updates!
